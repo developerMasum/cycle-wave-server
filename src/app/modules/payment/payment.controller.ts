@@ -7,7 +7,8 @@ const confirmationController = async (req: Request, res: Response) => {
   const verifyResponse = await verifyPayment(
     transactionId as string,
     status as string
-  ); // console.log(verifyResponse);
+  );
+  console.log(verifyResponse);
   const result = await paymentService.confirmationService(
     req.query.transactionId as string,
     req.query.status as string

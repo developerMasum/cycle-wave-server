@@ -13,7 +13,7 @@ interface OrderInput {
   address: string;
   userId: string;
   deliveryCharge: number;
-  paymentMethod: "Cash On Delivery" | "Online Payment";
+  paymentMethod: "Cash On Delivery" | "ONLINE PAYMENT";
   products: Array<{
     product: string; // ObjectId as string
     quantity: number;
